@@ -55,4 +55,10 @@ monsters.find(Attacks:Run and bite) or db.monsters.find({"Attacks":"Run and bite
 // Write the command that will find a monster based on their defense stat.
 monsters.find(Stats:defense) or db.monsters.find({"Stats.defense": 10})
 
- 
+
+var mongo = function(db) {
+db.monsters.find({"Stats.Attack":{"$lt":10}})                
+        
+        
+        
+}
