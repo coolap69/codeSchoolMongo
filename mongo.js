@@ -83,3 +83,5 @@ db.monsters.aggregate([ {"$group":{"_id":"$type"}}])
 //then include a count of all the monsters for that type and that types average attack. 
 //(the first three items are the answer to the prior question)
 db.monsters.aggregate([ {"$group":{"_id":"$type", "total":{"$sum":1}, "averageAttack":{"$avg":1}}}])
+//(the first three items are the answer to the prior question)
+db.monsters.aggregate([ {"$group":{"_id":"$type", "total":{"$sum":1}, "averageAttack":{"$avg":1}}}])
